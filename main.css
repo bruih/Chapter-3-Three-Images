@@ -1,0 +1,99 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  background: url('pgrbg.png');
+}
+@font-face { font-family: ErasUltraITC; src: url('ErasUltraITC.ttf');
+}
+.text{
+  color:white;
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  font-size: 2em;
+  z-index: 1000;
+  font-family: ErasUltraITC, sans-serif;
+}
+
+img{
+  border: 10px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  display: block;
+  margin: 1.3em auto;
+  width:600px;
+}
+/*---------------------------ELDEN ZONE----------------------------------*/ 
+#elden {
+  position: absolute;
+left: -15px;
+ top: 200px;
+/*used webkit,moz,o so all browser supports the animation */ 
+ -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+#elden:hover{
+  top: 100px;
+} 
+.eldendesc{
+  font-family: ErasUltraITC, sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  text-shadow: 0 0 10px #FFFF00;
+  transition: opacity .2s, visibility .2s;
+}
+.eldenContainer:hover .eldendesc {
+  visibility: visible;
+  opacity: 1;
+}
+/*---------------------------DS3 ZONE----------------------------------------*/ 
+    #ds3 {
+      position: absolute;
+      top: 200px;
+      left: 1300px;
+      -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+      }
+#ds3:hover{
+  top: 100px;
+}
+.ds3desc{
+  font-family: ErasUltraITC, sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  text-shadow: 0 0 10px #FFFF00;
+  transition: opacity .2s, visibility .2s;
+}
+.ds3Container:hover .ds3desc{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*---------------------------SEKIRO ZONE----------------------------------*/   
+#sekiro {
+  position: absolute;
+  top: 300px;
+  left: 650px;
+ -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  }
+
+  .sekiroContainer:hover .sekirodesc {
+    visibility: visible;
+    opacity: 1;
+  }
+  .sekirodesc{
+    font-family: ErasUltraITC, sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    text-shadow: 0 0 10px #FFFF00;
+    transition: opacity .2s, visibility .2s;
+  }
+  #sekiro:hover{
+    top: 100px;
+  }
+  /*---------------------------SEKIRO ZONE----------------------------------*/ 
